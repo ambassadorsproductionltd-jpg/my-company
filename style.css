@@ -10,7 +10,7 @@ html{
 }
 /* the body style */
 .bgimage {
-  background-image: url(/images/js.jpg);
+  background-image: url(js.jpg);
   background-position: center;
   background-repeat: none;
   background-size: contain;
@@ -229,7 +229,7 @@ body:hover {
   border: 0.5px solid white;
   border-radius: 20px;
   font-size: 40px;
-  background-image: url(/images/js.jpg);
+  background-image: url(js.jpg);
   background-repeat: none;
   backdrop-filter: blur(10px);
   font-weight: 700;
@@ -298,4 +298,5 @@ body:hover {
          }
 .social-media{
   vertical-align: center;
+
 }
