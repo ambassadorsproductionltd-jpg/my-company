@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambassador Production Ltd</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "-VSdriDkIGQu9O0F-",
+        });
+      })();
+    </script>
+    <script src="/script.js"></script>
+  </head>
+
+  <body>
+    <div class="bgimage">
+      <div class="main">
+        <div class="nav">
+          <div class="logo">
+            <img src="/images/logo.png" alt="logo" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#">shop</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li class="magic-list">
+                <div class="sub-menutext">more</div>
+                <aside class="sub-menu">
+                  <li>Portfolio</li>
+                  <li>courses</li>
+                  <li>Login/Sign up</li>
+                </aside>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button class="joinUs">Join us</button>
+          </div>
+        </div>
+        <section class="home" id="home">
+          <div>
+            <h1>WELCOME TO</h1>
+            <h3>AMBASSADORS'</h3>
+            <h2>Production Limited</h2>
+            <p>Printing | Branding | Souvenirs | ICT Services</p>
+            <p>💡Quality Work | Fast Delivery | Trusted Services</p>
+            <a href="#service"><button>Our Services</button></a>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div><h1>ABOUT</h1></div>
+          <div class="profileMV">
+            <div class="company-profile">
+              <h2>Company Profile</h2>
+              <p>
+                Ambassadors Production Ltd is a professional printing, branding,
+                and digital service company committed to delivering high-quality
+                creative and production solutions to individuals, businesses,
+                ministries, and corporate organizations. <br />The company
+                operates with a strong dedication to excellence, innovation,
+                reliability, and customer satisfaction. Founded with the vision
+                of providing complete production and communication support
+                services under one roof, Ambassadors Production Ltd has
+                developed expertise in modern printing technology, graphic
+                design, branding, and ICT-related services. Our team combines
+                creativity, technical skills, and professional experience to
+                ensure that every project is delivered with precision,
+                durability, and outstanding finishing.
+              </p>
+            </div>
+            <div class="m_and_v">
+              <div class="vision">
+                <h2>Our Vision</h2>
+                To become a leading production and branding service provider
+                recognized for quality, creativity, and professional excellence.
+                Core Values Quality Service Delivery Creativity and Innovation
+                Professional Integrity Customer Satisfaction Timely Execution
+                Motto: We actualize to motivate.
+              </div>
+              <div class="mission">
+                <h2>Our Mission</h2>
+                To provide innovative, reliable, and affordable printing and
+                branding solutions that help businesses, organizations, and
+                individuals communicate effectively and promote their identity
+                with confidence.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service" id="service">
+          <h1>Our Services</h1>
+          <div class="our-services">
+            <p>General Printing</p>
+            <p>Graphics Design</p>
+            <p>Sav/Flex Banner Production</p>
+            <p>Typesettings and photocopy</p>
+            <p>see more..</p>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="social-media">
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Tiktok</p>
+            <p>Twitter</p>
+          </div>
+          <div class="emailform">
+            <div class="form-container">
+              <h2>Send a Message</h2>
+              <form id="contact-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Email Address" required />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+  </div>
+
+  <button type="button" onclick="sendMail(event)">Send Message</button>
+</form>
+
+<script src="script.js"></script>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+  transition: 500ms ease-in-out;
+}
+/* the body style */
+.bgimage {
+  background-image: url(/images/js.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: contain;
+  height: 150vh;
+}
+body:hover {
+  margin: 0;
+  paadding: 0;
+}
+.main {
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+  height: 100vh;
+}
+.main:hover .nav{
+  backdrop-filter: blur(4px);
+  top:0;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top:0;
+  justify-content: space-evenly;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.267)0%, rgba(171, 29, 150, 0.267)70%); */
+}
+/* the logo section */
+.logo img {
+  float: left;
+  padding: 10px;
+  width: 40%;
+}
+/* the menu  */
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  color: white;
+  list-style: none;
+  margin: 10px;
+  font-size: medium;
+  font-weight: 400;
+  font-family: "montserrat";
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 500ms ease-in-out;
+}
+.joinUs{
+  background-color: transparent;
+  padding: 10px;
+  border: 2px double rgb(89, 89, 248);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 2px;
+  margin-top: 4px;
+  padding: 10px 30px;
+  transition: 500ms ease-in-out;
+  box-shadow: 0px 0px 20px 2px rgb(89, 89, 248);
+ 
+}
+/* submenu, thats is MORE */
+.sub-menu {
+  position: absolute;
+  display: block;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: none;
+  right: 17%;
+}
+.sub-menu li {
+  border-bottom: 0.5px solid white;
+  padding: 5px;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+}
+.sub-menu li:hover {
+  color: rgb(89, 89, 248);
+}
+.sub-menutext {
+  cursor: pointer;
+}
+.magic-list:hover .sub-menu {
+  display: block;
+}
+/* hover effect on the nav bar */
+.menu ul li a:hover {
+  color: rgb(89, 89, 248);
+  cursor: pointer;
+}
+.home {
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* height: 90vh; */
+  justify-content: center;
+  padding: 120px 0px;
+}
+.home div {
+  margin-top: 40px;
+}
+.home h1 {
+  font-size: 60px;
+  font-weight: 900;
+  font-family: "montserrat";
+  color: rgb(89, 89, 248);
+  text-shadow: 1px 1px 20px rgb(98, 98, 98);
+}
+.home p {
+  font-size: 16px;
+  font-family: "montserrat";
+  padding: 5px;
+}
+.home h3 {
+  color: white;
+  font-size: 90px;
+  font-weight: 900;
+  font-family: "montserrat";
+  padding: 5px;
+}
+.home h2 {
+  font-size: 65px;
+  font-family: "montserrat";
+}
+.home button {
+  background-color: transparent;
+  padding: 10px;
+  border: 2px double rgb(89, 89, 248);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 2px;
+  margin-top: 4px;
+  padding: 10px 30px;
+  transition: 500ms ease-in-out;
+  box-shadow: 0px 0px 20px 2px rgb(89, 89, 248);
+}
+.home button:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+  /* color: black; */
+}
+.about {
+  background-color: black;
+  height: 100vh;
+  border-top: 3px groove white;
+  /* margin-top: 50px; */
+  color: white;
+  padding: 100px 20px 0px 20px;
+  text-align: justify;
+  gap: 20px;
+  font-family: "montserrat";
+  line-height: 30px;
+  align-items: center;
+  font-size: medium;
+}
+.about h1{
+  font-size: 80px;
+  font-weight: 800;
+  color:rgb(89, 89, 248);
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 20px rgb(98, 98, 98);
+}
+.company-profile h1{
+  font-size: 100px;
+  color: rgb(89, 89, 248);
+  margin-bottom:50px;
+  font-weight: 800;
+  padding-top: 100px;
+}
+.profileMV{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+  padding: 20px;
+}
+.profileMV h2{
+  font-size: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.service{
+  height: 160vh;
+  background-image: linear-gradient( -180deg, rgba(0,0,0,1), rgba(89,89,248,1));
+  padding: 100px 20px 0px 20px;
+  color: white;
+  cursor: pointer;
+}
+.service h1{
+  font-size: 80px;
+  font-weight: 800;
+  color:rgb(89, 89, 248);
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 20px rgb(98, 98, 98);
+}
+.our-services{
+  text-align: center;
+}
+.our-services p{
+  padding: 30px 0px;
+  margin: 10px 100px;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  font-size: 40px;
+  background-image: url(/images/js.jpg);
+  background-repeat: none;
+  backdrop-filter: blur(10px);
+  font-weight: 700;
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 3px;
+  transition:500ms ease-in-out;
+}
+.our-services p:hover{
+  margin: 20px 50px;
+  padding: 50px 0px;
+
+}
+ .contact {
+  height: auto; /* Changed from 160vh to prevent huge empty spaces */
+  min-height: 100vh;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(89,89,248,1));
+  padding: 100px 20px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Centered the form vertically */
+  gap: 40px;
+}
+       .form-container { 
+  background: white; 
+  padding: 30px; 
+  border-radius: 12px; /* Smoother corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+  width: 100%;
+  max-width: 450px;
+  color: #333; /* Make text readable inside the white form */
+}
+
+/* Ensure labels are visible on the white background */
+.form-container label {
+  color: #333;
+}
+        .form-group { 
+          margin-bottom: 15px;
+         }
+        label {
+           display: block;
+           margin-bottom: 5px;
+            font-weight: bold;
+           }
+        input, textarea { 
+          width: 100%; 
+          padding: 10px;
+           border: 1px solid #ccc;
+            border-radius: 4px; 
+            box-sizing: border-box;
+           }
+        button {
+           width: 100%; 
+          padding: 10px; 
+          background-color: #007BFF; 
+          color: white; 
+          border: none;
+           border-radius: 4px; 
+           cursor: pointer;
+            font-size: 16px;
+           }
+        button:hover { 
+          background-color: #0056b3;
+         }
+.social-media{
+  vertical-align: center;
+}
